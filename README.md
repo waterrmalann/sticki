@@ -14,7 +14,7 @@ A simple web application to take notes within the browser in an organized manner
 
 ### Setup
 
-A live version of the web app is available on my github pages [here](https://waterrmalann.github.io/kards/). Another version (could be outdated) is hosted on my personal portfolio at this [link](http://alanvarghese.me/projects/kards/app.html). If you wish to modify the app or host it yourself, you can clone the repo and do whatever you want with it.
+A live version and up to date version of the web app is available [here](https://waterrmalann.github.io/webpad/). If you wish to modify the app or host it yourself, you can clone the repo and do whatever you want with it.
 
 1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 ```
