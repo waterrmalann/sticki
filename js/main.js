@@ -22,14 +22,14 @@ function uniqueID() {
 }
 
 function loadData() {
-    let _data = localStorage.getItem("appData");
+    let _data = localStorage.getItem("webpad-appData");
     if (_data) {
         appData = JSON.parse(_data);
     }
 }
 
 function saveData() {
-    localStorage.setItem("appData", JSON.stringify(appData));
+    localStorage.setItem("webpad-appData", JSON.stringify(appData));
 }
 
 function createNote(id, content, toDatabase = true) {
