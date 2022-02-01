@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: sandybrown;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container {
+    width: min(96%, 120.5rem);
+    margin-inline: auto;
+    padding-block: 1.5rem;
+}
+
+.container > :is(h2, p) {
+    margin: 0;
+}
+
+#notesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.note {
+    height: 300px;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#addNote {
+    height: 300px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+    font-size: 7.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#addNote:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
