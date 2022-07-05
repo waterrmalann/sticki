@@ -4,8 +4,6 @@
 
 ## [Demo](https://waterrmalann.github.io/webpad/)   |   [Source](https://github.com/waterrmalann/webpad/blob/main/js/main.js)
 
-### 1/12 | 12 Months, 12 Apps (January)
-
 A simple web application to take notes within the browser in an organized manner. As a person who takes a lot of notes, this was made mostly out of necessity. The UI is inspired by [this youtube tutorial](https://www.youtube.com/watch?v=Efo7nIUF2JY). All data is stored locally on the computer by the browser. This whole project was written in HTML, CSS, and pure vanilla JavaScript with no external dependencies.
 
 ![Screenshot](screenshot.JPG)
