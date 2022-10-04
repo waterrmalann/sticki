@@ -12,11 +12,49 @@
     </head>
     <body>
         <div class="container">
-            <h2>WebPad.</h2>
-            <p>A sticky notepad, for the web.</p>
+            <div class="flex-between">
+                <div>
+                    <h2>WebPad.</h2>
+                    <p>A sticky notepad, for the web.</p>
+                </div>
+                <div>
+                    <span id="themeModalOpen">👕</span>
+                </div>
+            </div>
         </div>
         <div id="notesContainer">
             <button id="addNote" type="button">+</button>
+        </div>
+
+        <div id="themeModal" class="modal">
+            <div class="modal__content">
+                <span class="modal__close" id="themeModalClose">&times;</span>
+
+                <h2>Background Color</h2>
+
+                <button class="colorbox" data-colorbox-clr="#ffffff" data-colorbox-of="backgroundColor"></button>
+                <button class="colorbox" data-colorbox-clr="#000000" data-colorbox-of="backgroundColor"></button>
+                <button class="colorbox" data-colorbox-clr="#7afcff" data-colorbox-of="backgroundColor"></button>
+                <button class="colorbox" data-colorbox-clr="#ff65a3" data-colorbox-of="backgroundColor"></button>
+                <hr class="lightline">
+                <input type="color" id="backgroundColor" name="bgclr" value="#e66465">
+                <label for="bgclr">Custom</label>
+
+                <h2>Card Color</h2>
+
+                <button class="colorbox" data-colorbox-clr="#fff740" data-colorbox-of="cardColor"></button>
+                <button class="colorbox" data-colorbox-clr="#ffffff" data-colorbox-of="cardColor"></button>
+                <button class="colorbox" data-colorbox-clr="#ff7eb9" data-colorbox-of="cardColor"></button>
+                <button class="colorbox" data-colorbox-clr="#feff9c" data-colorbox-of="cardColor"></button>
+                <hr class="lightline">
+                <input type="color" id="cardColor" name="cardclr" value="#e66465">
+                <label for="cardclr">Custom</label>
+
+                <h3>Card Text Color</h3>
+                <input type="color" id="cardTextColor" name="cardtextclr" value="#e66465">
+                <label for="cardtextclr">Custom</label>
+
+            </div>
         </div>
 
         <script src="js/main.js" defer></script>
