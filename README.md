@@ -6,7 +6,7 @@
 
 A simple web application to take notes within the browser in an organized manner. As a person who takes a lot of notes, this was made mostly out of necessity. All data is stored locally on the computer by the browser. This whole project was written in HTML, CSS, and pure vanilla JavaScript with no external dependencies.
 
-![Screenshot](screenshot.JPG)
+![Screenshot](screenshot.png)
 
 ---
 
