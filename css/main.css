@@ -23,6 +23,8 @@ body {
 
 .container :is(h2, p) {
     margin: 0;
+    mix-blend-mode:difference;
+    color: white;
 }
 
 .flex-between {
