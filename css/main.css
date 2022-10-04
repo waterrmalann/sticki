@@ -1,11 +1,16 @@
+:root {
+    --background-clr: white;
+    --card-clr: #fff740;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background: sandybrown;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    background: var(--background-clr);
+    font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .container {
@@ -26,11 +31,13 @@ body {
 }
 
 .note {
+    background-color: var(--card-clr);
     height: 300px;
     padding: 1rem;
     border: none;
-    border-radius: 0.625rem;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    /*border-radius: 0.625rem;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.25);
     resize: none;
     font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -41,7 +48,8 @@ body {
     border: none;
     outline: none;
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 0.625rem;
+    /*border-radius: 0.625rem;*/
+    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.25);
     font-size: 7.5rem;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;

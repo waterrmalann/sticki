@@ -4,7 +4,7 @@
 
 ## [Demo](https://waterrmalann.github.io/webpad/)   |   [Source](https://github.com/waterrmalann/webpad/blob/main/js/main.js)
 
-A simple web application to take notes within the browser in an organized manner. As a person who takes a lot of notes, this was made mostly out of necessity. The UI is inspired by [this youtube tutorial](https://www.youtube.com/watch?v=Efo7nIUF2JY). All data is stored locally on the computer by the browser. This whole project was written in HTML, CSS, and pure vanilla JavaScript with no external dependencies.
+A simple web application to take notes within the browser in an organized manner. As a person who takes a lot of notes, this was made mostly out of necessity. All data is stored locally on the computer by the browser. This whole project was written in HTML, CSS, and pure vanilla JavaScript with no external dependencies.
 
 ![Screenshot](screenshot.JPG)
 
@@ -15,15 +15,15 @@ A simple web application to take notes within the browser in an organized manner
 A live version and up to date version of the web app is available [here](https://waterrmalann.github.io/webpad/). If you wish to modify the app or host it yourself, you can clone the repo and do whatever you want with it.
 
 1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
-```
+```sh
 git clone https://github.com/waterrmalann/webpad.git
 ```
 2. Install the dependencies.
-```
+```sh
 npm install
 ```
 3. This will start a live server. Head to the IP shown in the console.
-```
+```sh
 npm run serve
 ```
 
@@ -42,4 +42,4 @@ Contributions are always accepted. Feel free to open a pull request to fix any i
 License
 ----
 
-MIT License, see [LICENSE](LICENSE)
+This project is licensed under the permissive **MIT License**, see [LICENSE](LICENSE)
