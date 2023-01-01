@@ -1,10 +1,10 @@
-# Webpad - Sticky Notepad
+# Sticki - Sticky Notepad
 
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 
-## [Demo](https://waterrmalann.github.io/webpad/)   |   [Source](https://github.com/waterrmalann/webpad/blob/main/js/main.js)
+## [Demo](https://waterrmalann.github.io/sticki/)   |   [Source](https://github.com/waterrmalann/sticki/blob/main/js/main.js)
 
-A simple web application to take notes within the browser in an organized manner. As a person who takes a lot of notes, this was made mostly out of necessity. All data is stored locally on the computer by the browser. This whole project was written in HTML, CSS, and pure vanilla JavaScript with no external dependencies.
+A simple web application to write and save sticky notes within the browser. As a person who takes a lot of notes, this was made mostly out of necessity. All data is stored locally on the computer by the browser. This whole project was written in HTML, CSS, and pure vanilla JavaScript with no external dependencies.
 
 ![Screenshot](screenshot.png)
 
@@ -12,11 +12,11 @@ A simple web application to take notes within the browser in an organized manner
 
 ### Setup
 
-A live version and up to date version of the web app is available [here](https://waterrmalann.github.io/webpad/). If you wish to modify the app or host it yourself, you can clone the repo and do whatever you want with it.
+A live version and up to date version of the web app is available [here](https://waterrmalann.github.io/sticki/). If you wish to modify the app or host it yourself, you can clone the repo and do whatever you want with it.
 
 1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 ```sh
-git clone https://github.com/waterrmalann/webpad.git
+git clone https://github.com/waterrmalann/sticki.git
 ```
 2. Install the dependencies.
 ```sh
@@ -28,12 +28,6 @@ npm run serve
 ```
 
 ---
-
-### To-Do
-
-- Add a tiny cross mark when you hover over a card to make the delete UX better.
-- Double click a card to expand it into a modal like view.
-- Ability to change theme, and font.
 
 ### Contribution
 
