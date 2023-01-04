@@ -88,3 +88,11 @@ body {
     display: none;
     cursor: pointer;
 }
+
+footer p {
+	background-color: rgba(14, 14, 14, 0.15);
+    color: var(--clr);
+    border-radius: 1rem;
+	padding: 0.35rem 0.75rem;
+	width: fit-content;
+}
