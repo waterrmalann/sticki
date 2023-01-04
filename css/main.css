@@ -1,7 +1,18 @@
 :root {
     --background-clr: #ffffff;
-    --card-clr: #fff740;
-    --card-text-clr: #111;
+    --clr: #212427;
+    --card-text-clr: #212427;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+        --background-clr: #202124;
+        --clr: #fff;
+        --card-text-clr: #212427;
+    }    
+	html {
+		color-scheme: dark light;
+	}
 }
 
 * {
@@ -11,7 +22,8 @@
 body {
     margin: 0;
     background: var(--background-clr);
-    font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--clr);
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: background 1s;
 }
 
@@ -19,12 +31,6 @@ body {
     width: min(96%, 120.5rem);
     margin-inline: auto;
     padding-block: 1.5rem;
-}
-
-.container :is(h2, p) {
-    margin: 0;
-    mix-blend-mode:difference;
-    color: white;
 }
 
 .flex-between {
@@ -38,89 +44,47 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     padding: 2rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .note {
-    background-color: var(--card-clr);
+    background-color: #fec870;
+    border: none;
+    border-radius: 0.75rem;
     height: 300px;
     padding: 1rem;
-    border: none;
-    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.25);
     resize: none;
-    font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: background-color 1s;
+    font-size: 1.25rem;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: .2s;
     color: var(--card-text-clr);
 }
 
+.note:hover {
+    box-shadow: 2px 2px 5px rgba(14, 14, 14, 0.15);
+    transition: 0.2s;
+}
+
 #addNote {
-    height: 300px;
-    border: none;
     outline: none;
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 0.75rem;
+    height: 300px;
+    padding: 1rem;
+    resize: none;
     font-size: 7.5rem;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: .2s;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: background 0.2s;
 }
 
 #addNote:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 
-/* Modal */
-.modal {
+#darkModeToggle {
     display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: none;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal__content {
-    background-color: #fefefe;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 0.5rem;
-}
-
-.modal__close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.modal__close:hover,
-.modal__close:focus {
-    color: rgb(255, 81, 81);
-    text-decoration: none;
     cursor: pointer;
-    transition: color 0.3s;
-}
-
-#themeModalOpen {
-    cursor: pointer;
-}
-
-.colorbox {
-    /*background-color: attr(data-colorbox-clr color, red);*/
-    background: black;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 2rem;
-}
-
-.lightline {
-    margin: 1rem auto;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
